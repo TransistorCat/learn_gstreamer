@@ -20,6 +20,7 @@ tutorial_main (int argc, char *argv[])
       ("playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm",
       NULL);
   //等效于  gst-launch-1.0 playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm
+  
   /* Start playing */
   gst_element_set_state (pipeline, GST_STATE_PLAYING);
 

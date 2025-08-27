@@ -8,8 +8,8 @@
             "name": "Launch hello_gst (GDB)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Basic/01_hello_world/hello_gst",
-            "cwd": "${workspaceFolder}/Basic/01_hello_world",
+            "program": "${workspaceFolder}/build/Basic/01_hello_world/hello_gst",
+            "cwd": "${workspaceFolder}",
             "args": [],
             "environment": [
                 { "name": "GST_DEBUG", "value": "2" }
@@ -18,7 +18,39 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "externalConsole": false,
             "stopAtEntry": true,
-            "preLaunchTask": "build hello_world"
+            "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_2 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/02_GStreamer_concepts/basic_tutorial_2",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_3 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/03_Dynamic_pipelines/basic_tutorial_3",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
         }
     ]
 }
