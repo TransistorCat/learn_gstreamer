@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch hello_gst (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Basic/01_hello_world/hello_gst",
+            "cwd": "${workspaceFolder}/Basic/01_hello_world",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "build hello_world"
+        }
+    ]
+}
