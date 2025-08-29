@@ -44,6 +44,13 @@
             "command": "${workspaceFolder}/build/Basic/03_Dynamic_pipelines/basic_tutorial_3",
             "dependsOn": ["cmake build"],
             "problemMatcher": []
+        },
+        {
+            "label": "run basic_tutorial_4",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Basic/04_Time_management/basic_tutorial_4",
+            "dependsOn": ["cmake build"],
+            "problemMatcher": []
         }
     ]
 }

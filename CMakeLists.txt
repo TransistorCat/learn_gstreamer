@@ -13,4 +13,6 @@ add_subdirectory(Basic/01_hello_world)
 add_subdirectory(Basic/02_GStreamer_concepts)
 add_subdirectory(Basic/03_Dynamic_pipelines)
 
+add_subdirectory(Basic/04_Time_management)
+
 

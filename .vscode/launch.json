@@ -51,6 +51,22 @@
             "externalConsole": false,
             "stopAtEntry": true,
             "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_4 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/04_Time_management/basic_tutorial_4",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
         }
     ]
 }
