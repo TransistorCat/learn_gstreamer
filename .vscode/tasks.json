@@ -27,7 +27,7 @@
         {
             "label": "run hello_gst",
             "type": "shell",
-            "command": "${workspaceFolder}/build/Basic/01_hello_world/hello_gst",
+            "command": "${workspaceFolder}/build/Basic/01_hello_world/basic-tutorial-1",
             "dependsOn": ["cmake build"],
             "problemMatcher": []
         },
@@ -49,6 +49,13 @@
             "label": "run basic_tutorial_4",
             "type": "shell",
             "command": "${workspaceFolder}/build/Basic/04_Time_management/basic_tutorial_4",
+            "dependsOn": ["cmake build"],
+            "problemMatcher": []
+        },
+        {
+            "label": "run basic_tutorial_5",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Basic/05/basic_tutorial_5",
             "dependsOn": ["cmake build"],
             "problemMatcher": []
         }

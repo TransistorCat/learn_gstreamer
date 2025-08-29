@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
   bus = gst_element_get_bus (data.playbin);
   do {
     msg = gst_bus_timed_pop_filtered (bus, 100 * GST_MSECOND,
-        GST_MESSAGE_STATE_CHANGED | GST_MESSAGE_ERROR | GST_MESSAGE_EOS | GST_MESSAGE_DURATION);
+        GST_MESSAGE_STATE_CHANGED | GST_MESSAGE_ERROR | GST_MESSAGE_EOS | GST_MESSAGE_DURATION); // 100ms timeout for message
 
     /* Parse message */
     if (msg != NULL) {

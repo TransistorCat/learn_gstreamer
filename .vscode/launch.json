@@ -8,7 +8,7 @@
             "name": "Launch hello_gst (GDB)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Basic/01_hello_world/hello_gst",
+            "program": "${workspaceFolder}/build/Basic/01_hello_world/basic-tutorial-1",
             "cwd": "${workspaceFolder}",
             "args": [],
             "environment": [
@@ -57,6 +57,22 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/Basic/04_Time_management/basic_tutorial_4",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_5 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/05_GUI_toolkit_integration/basic_tutorial_5",
             "cwd": "${workspaceFolder}",
             "args": [],
             "environment": [
