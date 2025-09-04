@@ -127,6 +127,8 @@ int main(int argc, char *argv[]) {
   source = gst_element_factory_create (source_factory, "source");
   sink = gst_element_factory_create (sink_factory, "sink");
 
+  //gst_element_factory_make() is really a shortcut for gst_element_factory_find()+ gst_element_factory_create().
+  
   /* Create the empty pipeline */
   pipeline = gst_pipeline_new ("test-pipeline");
 

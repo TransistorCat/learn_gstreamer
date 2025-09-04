@@ -58,6 +58,27 @@
             "command": "${workspaceFolder}/build/Basic/05/basic_tutorial_5",
             "dependsOn": ["cmake build"],
             "problemMatcher": []
+        },
+        {
+            "label": "run basic_tutorial_6",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Basic/06_Media_formats_and_Pad_Capabilities/basic_tutorial_6",
+            "dependsOn": ["cmake build"],
+            "problemMatcher": []
+        },
+        {
+            "label": "run basic_tutorial_7",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Basic/07_Multithreading_and_Pad_Availability/basic_tutorial_7",
+            "dependsOn": ["cmake build"],
+            "problemMatcher": []
+        },
+        {
+            "label": "run basic_tutorial_8",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Basic/08_Short-cutting_the_pipeline/basic_tutorial_8",
+            "dependsOn": ["cmake build"],
+            "problemMatcher": []
         }
     ]
 }

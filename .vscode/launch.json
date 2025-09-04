@@ -83,6 +83,56 @@
             "externalConsole": false,
             "stopAtEntry": true,
             "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_6 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/06_Media_formats_and_Pad_Capabilities/basic_tutorial_6",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_7 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/07_Multithreading_and_Pad_Availability/basic_tutorial_7",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
+        },
+        {
+            "name": "Launch basic_tutorial_8 (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Basic/08_Short-cutting_the_pipeline/basic_tutorial_8",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "environment": [
+                { "name": "GST_DEBUG", "value": "2" }
+            ],
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "externalConsole": false,
+            "stopAtEntry": true,
+            "preLaunchTask": "cmake build"
         }
+
     ]
+    
 }
