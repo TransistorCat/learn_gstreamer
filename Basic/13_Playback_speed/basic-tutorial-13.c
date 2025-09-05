@@ -91,7 +91,7 @@ handle_keyboard (GIOChannel * source, GIOCondition cond, CustomData * data)
 
       gst_element_send_event (data->video_sink,
           gst_event_new_step (GST_FORMAT_BUFFERS, 1, ABS (data->rate), TRUE,
-              FALSE));
+              FALSE)); // sink-only
       g_print ("Stepping one frame\n");
       break;
     case 'q':
@@ -130,7 +130,7 @@ tutorial_main (int argc, char *argv[])
   /* Build the pipeline */
   data.pipeline =
       gst_parse_launch
-      ("playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm",
+      ("playbin uri=file:///home/liaojincheng/learn_gstreamer/sintel_trailer-480p.webm",
       NULL);
 
   /* Add a keyboard watch so we get notified of keystrokes */

@@ -79,6 +79,13 @@
             "command": "${workspaceFolder}/build/Basic/08_Short-cutting_the_pipeline/basic_tutorial_8",
             "dependsOn": ["cmake build"],
             "problemMatcher": []
+        },
+        {
+            "label": "run basic_tutorial_13",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Basic/13_Playback_speed/basic_tutorial_13",
+            "dependsOn": ["cmake build"],
+            "problemMatcher": []
         }
     ]
 }
