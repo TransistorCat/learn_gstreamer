@@ -132,6 +132,9 @@ int main(int argc, char *argv[]) {
 
   /* Create the playbin element */
   data.pipeline = gst_parse_launch ("playbin uri=appsrc://", NULL);
+  // "source-setup" 信号是 playbin 在内部创建 source 元素（如 appsrc、uridecodebin 的 source pad）时发出的信号，
+  // 允许应用在 source 元素被添加到管线后进行自定义配置（如设置 caps、连接信号等）。
+  // 下面这行代码将 source_setup 回调函数与 "source-setup" 信号关联起来，便于在 source 创建时进行配置。
   g_signal_connect (data.pipeline, "source-setup", G_CALLBACK (source_setup), &data);
 
   /* Instruct the bus to emit signals for each received message, and connect to the interesting signals */
